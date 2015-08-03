@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,339 +40,964 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+						<h1>Curso HTML5 y CSS3</h1>
+						<small> 1.0 Flujo de Trabajo Web</small>
 				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+						<h2>1.1 Conceptos Web</h2>
+						<small>Como funciona la web?</small><br>
+							<iframe width="620" height="415" src="https://www.youtube.com/embed/7_LPdttKXPc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+						<h3>1.1.1 Tecnologías y División Actual</h3>
+						<p>En la actualidad el desarrollo web se divide en 2 grandes categorías:</p>
+						<ul>
+							<li>Frontend</li>
+							<li>Backend</li>
+						</ul>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+						<h1>Frontend</h1>
+						<p>Los frontends tienden a ser programadores, pero hay diseñadores  que también hacen frontend. Son los encargados de maquetar la estructura semántica del contenido (HTML), codificar el diseño en hojas de estilo (CSS) y agregar la interacción con el usuario (Javascript).</p>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+						<h3>Algunas Tecnologías Frontend</h3>
+						<ul>
+							<li>HTML</li>
+							<li>Javascript</li>
+							<li>CSS3</li>
+							<li>SASS</li>
+							<li>Angularjs</li>
+						</ul>
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
+						<h1>Backend</h1>
+						<p>Un programador tiende a ser backend. Es la labor de ingeniería que compone el acceso a bases de datos y generación de plantillas del lado del servidor. En backend se encargan de implementar cosas como MySQL, Postgres, SQL Server o MongoDB. Luego, un lenguaje como PHP o JSP, o frameworks como RoR, Django, Node.JS o .NET se conectan a la base de datos. </p>
 				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+				<section>
+					<h3>Algunas Tecnologías Backend</h3>
+						<ul>
+							<li>MySQL</li>
+							<li>SQL Server</li>
+							<li>Mongo DB</li>
+							<li>PHP</li>
+							<li>Ruby</li>
+							<li>Javascript</li>
+						</ul>
 				</section>
 
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					<h1>1.2 Software de Desarrollo Open Source</h1>
+					<small>Para que pagar?</small>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+						<p>Básicamente segmentaremos el software de desarrollo orientado a Frontend en 2</p>
+						<ul>
+							<li> Editores de Texto</li>
+							<li> Editores WYSIWG</li>
+						</ul>
+				</section>
+				
+				<section>
+						<h3>ATOM</h3>
+						<small>Editor de Texto by github</small>
+						<p>Atom es un software para frontend construido en las mismas tecnologias de frontend. Vas a editar HTML y JS en un editor hecho en HTML y JS</p>
+						<img src="images/atom-logo.png" alt="" width="300">
+				</section>
 
-    var nodes = document.querySelectorAll( selector );
+				<section>
+						<h3>Sublime Text</h3>
+						<small>Editor de Texto</small>
+						<p>Sublime Text es un editor de texto tiene infinidad de plugins para agile web development y shortcodes además de una comunidad muy activa</p>
+						<img src="images/sublimetext.jpg" alt="">
+				</section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+				<section>
+						<h1>EDITORES WYSIWG</h1>
+						<small>Para débiles</small>
+				</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+				<section>
+						<h3>Adobe Muse</h3>
+						<small>Editor WYSIWG (de pago)</small>
+						<p>Adobe - con la muerte de flash - lanzó adobe Muse como un intento por posicionar y tomar el mercado de HTML5 en el ámbito WYSIWYG. Es de pago</p>
+						<img src="images/adobemuse.jpg" alt="">
+				</section>
+
+				<section>
+						<h3>Adobe Dreamweaver</h3>
+						<small>Editor WYSIWG (de pago)</small>
+						<p>Adobe - con la muerte de flash - lanzó adobe Muse como un intento por posicionar y tomar el mercado de HTML5 en el ámbito WYSIWYG. Es de pago</p>
+						<img src="images/dreamweavercc.jpg" alt="">
+				</section>
+				
+				<section>
+						<h1>Que vamos a usar para este curso?</h1>
+				</section>
+
+				<section>
+						<img src="images/sublimetext.jpg" alt="">
+						<h1>Sublime Text 2</h1>
+						<p> Descargar ahora!  <a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a></p>
+				</section>
+
+				<section>
+						<h1>Package Control para Sublime Text</h1>
+						<p>Instalar A- HO - RA <a href="https://packagecontrol.io/installation">https://packagecontrol.io/installation</a></p>
+				</section>
+
+				<section>
+					<img src="images/emmetlogo.svg" alt="">
+						<h1>EMMET</h1>
+						<p>La vida sin emmet no tiene sentido <a href="http://emmet.io/">http://emmet.io/</a></p>
+				</section>
+
+				<section>
+					<img src="images/github-deben.png" alt="">
+						<h2>Crearse una cuenta github, deben</h2>
+						<p> <a href="http://www.github.com">www.github.com</a></p>
+				</section>
+				
+				<section>
+					<h2>Github para Win / MAC</h2>
+					<ul>
+						<li><a href="https://windows.github.com/">https://windows.github.com/</a></li>
+						<li><a href="https://mac.github.com/">https://mac.github.com/</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>1.3 Nuevas Tecnologías y Tendencias</h2>
+						<small>What's new pussycat?</small>
+				</section>
+
+				<section>
+						<h2>Cambió la forma en que escribimos para frontend</h2>
+						<p>Si antes teniamos HTML + JS + CSS, ahora el estado del arte es mucho mas amplio, existen preprocesadores, precompiladores, uglificadores, minificadores que llega a ser ridiculo</p>
+				</section>
+
+				<section>
+					<img src="images/preprocesadorescss.jpg" alt="">
+						<h2>Preprocesadores CSS</h2>
+						<p>Un preprocesador es un punto intermedio, entre el código que escribes y el código que recibe el cliente final</p>
+						<p>Están hechos para hacer más facil la vida de quien codea</p>
+				</section>
+
+				<section>
+						<h2>Beneficios de los preprocesadores</h2>
+						<ul>
+							<li>Código sintacticamente mejorado</li>
+							<li>Aumenta la mantenibilidad del codigo</li>
+							<li>Ayudan a debuggear mas facilmente errores</li>
+							<li>Posibilidad de minificar y seguir estandares</li>
+						</ul>
+				</section>
+				<section>
+						<small>Ah... y </small>
+						<h1>DRY(A)</h1>
+						<small>Don't repeat yourself ...(assh*le) </small><br>
+
+						<img src="images/deal.gif" alt="">
+				</section>
+				
+				<section>
+					<h2>Suficiente, estoy convencido, muestrame tus preprocesadores</h2>
+					<small>A Pelear!</small>
+
+				</section>
+
+				<section>
+						<h4>CSS Old School</h4>
+<pre><code>
+	nav{
+		margin: 0;
+	}
+	nav ul{
+		margin: 0;
+		list-style:none;
+	}
+	nav ul a{
+		color: red
+	}
+</code></pre>
+						<h4>Preprocesador (SASS)</h4>
+<pre><code>
+	nav {
+	  margin: 0;
+		ul {
+			margin: 0;
+			list-style: none;
+			a{
+				color:red;
+			}
+	    }
+	}
+</code></pre>		
+				</section>
+				<section>
+						<h4>CSS Old School</h4>
+<pre><code>
+	a{ color: #333;}
+	span{ color: #333}
+	.header{ background-color: #333;}
+
+	/*  Te Quiero ver actualizando esto a mano */
+
+</code></pre>
+						<h4>Preprocesador (SASS)</h4>
+<pre><code>
+		$colorprimario : #333;
+
+	a{ color: $colorprimario;}
+	span{ color: $colorprimario}
+	.header{ background-color: $colorprimario;}
+</code></pre>		
+				</section>
+
+				<section>
+						<h2>HAML</h2>
+						<p>Haml (HTML abstraction markup language) esta basado en un principio primario básico:  el codigo de marcado deberia ser hermoso.(...) Haml acelera y simplifica la creación de templates ...</p>
+				</section>
+			
+				<section>
+					<h4>HTML</h4>
+<pre><code>
+&lt;section class=&quot;container&quot;&gt;
+	&lt;h1 class=&quot;container&quot;&gt;&lt;/h1&gt;
+	&lt;h2 class=&quot;post title&quot;&gt;&lt;/h2&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;div class=&quot;post content&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+</code></pre>
+
+					<h4>HAML</h4>
+					<pre><code>
+%section.container
+  %h1= post.title
+  %h2= post.subtitle
+  .content
+    = post.content
+					</code></pre>
+					<small>para mi es como matar una mosca con un lanzamisiles</small>
+				</section>
+
+				<section>
+					<h2>Otras Utilidades</h2>
+					<p>Para compilar el código generado por estos preprocesadores necesitamos un software intermedio, que vigile cambios en nuestros archivos y los compile. Hay varias formas de hacer esto</p>
+				</section>
+
+				<section>
+					<h2>Codekit (MAC)</h2>
+					<p>Una navaja suiza del preprocesamiento</p>
+					<img src="images/codekit.png" alt="">
+				</section>
+
+				<section>
+					<h2>Prepros (Win)</h2>
+					<p>Una navaja suiza del preprocesamiento (si, ya lo dije)</p>
+					<img src="images/prepros.png" alt="">
+				</section>
+				
+				<section>
+					<h2>Bonus</h2>
+					<p><a href="http://codepen.io">http://codepen.io</a> </p>
+					<img src="images/codepen.png" alt="">
+				</section>
+
+				<section>
+					<h1>2.- HTML5</h1>
+				</section>
+
+				<section>
+					<h2>¿Qué es HTML5?</h2>
+<pre><code>
+
+&lt;!DOCTYPE html&gt;						
+
+</code></pre>
+				</section>
+				<section>
+					<img src="images/wtf.gif" alt="">
+				</section>
+
+				<section>
+					<h2>No, pero enserio</h2>
+					<p>La W3C despues de varios años con el antiguo standard decide dar un upgrade al soporte del standard actual, con varios motivos</p>
+					<ul>
+						<li>El mundo cambió, HTML no habia cambiado</li>
+						<li>Agregar compatibilidad</li>
+						<li>Mejorar la semantica</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Historia de HTML5</h2>
+						<ul>
+							<li>Tim Berners-Lee invented www	1989</li>
+							<li>Tim Berners-Lee invented HTML	1991</li>
+							<li>Dave Raggett drafted HTML+	1993</li>
+							<li>HTML Working Group defined HTML 2.0	1995</li>
+							<li>W3C Recommended HTML 3.2	1997</li>
+							<li>W3C Recommended HTML 4.01	1999</li>
+							<li>W3C Recommended XHTML 1.0	2000</li>
+							<li>HTML5 WHATWG First Public Draft	2008</li>
+							<li>HTML5 WHATWG Living Standard	2012</li>
+							<li>HTML5 W3C Final Recommendation	2014</li>
+						</ul>
+
+				</section>
+				<section>
+					<img src="images/newhtml5elements.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Semantica HTML4 PLS</h2>
+					<img src="images/semantico.jpg" alt="" width="800">
+				</section>
+
+				<section>
+					<h2>Semantica HTML5 PLS</h2>
+					<img src="images/semanticohtml5.jpg" alt="" width="800">
+				</section>
+				
+				<section>
+					<h2>Semantica de Contenido</h2>
+					<p>Describe el tipo de contenido que ira dentro de los contendores, evita que las clases CSS sean usadas para determinar que tipo de contenido irá en los DIVS</p>	
+				</section>
+				
+				<section>
+						<h2>Header</h2>
+						<p>La mayoria de los sitios tiene un header, donde generalmente incluyes el logo y datos importantes (redes sociales por ejemplo)</p>
+						<img src="images/header.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>NAV</h2>
+						<p>Describe una barra de navegación</p>
+						<img src="images/nav.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>ARTICLE</h2>
+						<p>Describe un texto o documento autoconcluyente, por ejemplo en un diario seria una noticia</p>
+						<img src="images/article.png" alt="" width="400">
+				</section>
+				
+				<section>
+						<h2>SECTION</h2>
+						<p>Una seccion es una representacion generica de un documento o aplicación, una sección es en contexto una agrupación tematica de contenido</p>
+						<img src="images/section.png" alt="">
+				</section>
+
+				<section>
+					<h2>ASIDE</h2>
+					<p>En el elemento aside se encuentra contenido tangencialmente relacionado con el contenido, por ejemplo, enlaces a redes sociales</p>
+					<img src="images/aside.png" alt="">
+				</section>
+
+				<section>
+					<h2>TAREA</h2>
+					<p>Recrear semánticamente el sitio <a href="http://santander.cl">www.santander.cl</a></p>
+				</section>
+<!-- Clase 2 -->
+				<section>
+					<h2>Maquetación y Semántica</h2>
+					<p>Otras etiquetas nuevas de HTML5, proveen servicios multimedia, validación de datos e incorporación de graficos</p>
+				</section>
+
+				<section>
+					<h2>Video</h2>
+					<p></p>
+					<pre><code>
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
+  &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Soporte de Video</h2>
+					<img src="images/soportevideo.png" alt="">
+					<img src="images/soportevideonavegador.png" alt="">
+				</section>
+
+				<section>
+					<h2>Ej</h2>
+					<video width="640" height="480" controls>
+					  <source src="images/video.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+				</section>
+
+				<section>
+					<h2>Audio</h2>
+<pre><code>
+	&lt;audio controls&gt;
+	  &lt;source src=&quot;horse.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+	  &lt;source src=&quot;horse.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+	  Your browser does not support the audio tag.
+	&lt;/audio&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Soporte Audio</h2>
+					<img src="images/soporteaudio.png" alt="">
+					<img src="images/soporteaudionavegador.png" alt="">
+				</section>
+
+				<section>
+					<h2>Ej:</h2>
+					<audio controls>
+					  <source src="images/denver.mp3" type="audio/mpeg">
+					  Your browser does not support the audio tag.
+					</audio>
+				</section>
+
+				<section>
+					<h2>Nuevos Inputs</h2>
+					<ul>
+						<li>color</li>
+						<li>date</li>
+						<li>datetime</li>
+						<li>datetime-local</li>
+						<li>email</li>
+						<li>month</li>
+						<li>number</li>
+						<li>range</li>
+						<li>search</li>
+						<li>tel</li>
+						<li>time</li>
+						<li>url</li>
+						<li>week</li>
+					</ul>
+					<pre><code>
+&lt;input type=&quot;email&quot;&gt;
+&lt;input type=&quot;number&quot;&gt;
+&lt;input type=&quot;color&quot;&gt;
+&lt;input type=&quot;range&quot;&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Ej:</h2>
+Fecha <input type="date">
+Numero <input type="number">
+Color <input type="color">
+Rango <input type="range">
+				</section>
+
+				<section>
+					<h2>Canvas</h2>
+					<p>Un canvas es un area rectangular en HTML. Por defecto canvas no tiene border ni contenido</p>
+					<p>Se usa generalmente para dibujar graficos desde javascript.</p>
+				</section>
+
+				<section>
+					<h2>Ej:</h2>
+					<canvas id="micanvas" style="width:600px;height:480px;background-color:red;"></canvas>
+				</section>
+
+				<section>
+					<h2>Ej:</h2>
+					<pre><code>
+&lt;canvas id=&quot;micanvas&quot; style=&quot;width:600px;height:480px;background-color:red;&quot;&gt;&lt;/canvas&gt;
+&lt;script&gt;
+var c = document.getElementById(&quot;micanvas&quot;);
+var ctx = c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+&lt;/script&gt; 
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Soporte HTML5</h1>
+				</section>
+				<section>
+					<h2>HTML5 enabling script</h2>
+					<p>Permite usar las etiquetas semánticas dentro de IE6, 7 y 8 como si fueran divs normales, estilizables por CSS. Sin este script, las etiquetas serían ignoradas en IE y sería imposible agregarles diseño a ellas o a cualquier elemento dentro de ellas. Para utilizarlo debes incluir esta línea en el HEAD de tu documento:</p>
+				</section>
+				<section>
+					<h2>Ej:</h2>
+					<pre><code>
+&lt;!--[if lt IE 9]&gt;&lt;script src=&rdquo;http://HTML5shim.googlecode.com/svn/trunk/HTML5.js&rdquo;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Detectar capacidades del navegador</h2>
+					<p>Con <b>Modernizr</b> puedes detectar si el navegador tiene soporte para múltiples capacidades de Javascript, HTML5 y CSS3. Si no, tú mismo puedes codear la solución o alternativa.</p>
+					<img src="images/modernizr.png" alt="">
+				</section>
+
+				<section>
+					<h2>¿Puedo usar esto ahora?</h2>
+					<p>Con caniuse.com puedes estar seguro</p>
+					<img src="images/caniuse.png" alt="">
+				</section>
+				<section>
+					<h2>Empezar con HTML5</h2>
+					<p>Boilerplate es un proyecto con más de 1000 commits que anda en actualización constante y que reúne un paquete de plantillas en css y html</p>
+					<img src="images/html5boilerplate.jpg" alt="">
+				</section>
+				<section>
+					<h1>3 CSS-3</h1>
+				</section>
+
+				<section>
+					<h2>CSS</h2>
+					<p>CSS son las hojas de estilo en cascada, es decir, es el encargado de generar los estilos de nuestro documento HTML.</p>
+<pre><code>
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot;&gt;
+</code></pre>
+				</section>
+				<section>
+					<h2>Selectores</h2>
+					<p>
+						Un selector CSS es un conjunto de reglas por las que podemos dar estilo a cualquier elemento de nuestro HTML.
+					</p>
+<pre><code>
+	  &lt;div class=&quot;caja&quot;&gt;
+	  		Soy una caja
+	  &lt;/div&gt;
+
+	  .caja{
+ 			width:100px;
+ 			background-color: #333;
+		}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Clase</h2>
+					<p>Una clase es un selector que utilizamos para elementos que usaremos mas de una vez. Se define anteponiendo un . al nombre de la clase. Ej:</p>
+<pre><code>
+	.clase{
+			{...}
+	}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Id</h2>
+					<p>Un id es un selector que sirve como identificador unico para un elemento. Se define anteponiendo un # al nombre del id. Ej: </p>
+<pre><code>
+	#home{
+			{...}
+	}
+</code></pre>
+				</section>
+
+				<section>
+					<h2> * </h2>
+					<p>El selector * aplicará estilos a <b>TODOS</b> los elementos hijos del selector Ej:</p>
+<pre><code>
+*{
+	color: red;
+}
+</code></pre>
+				</section>
+
+
+				<section>
+						<h2>TAREA</h2>
+						<p>Crea 3 divs con un texto , de colores rojo, verde y azul.</p>
+						<p>PD: puedes usar codepen ;)</p>
+				</section>
+
+				<section>
+<pre><code>
+	<span class="caja1">Caja 1</span>
+	<span class="caja2">Caja 2</span>
+	<span class="caja3">Caja 3</span>
+
+	.caja1{color: red;}
+	.caja2{color: green; }
+	.caja3{color: blue;}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Propiedades</h2>
+					<p>Las propiedades css, modifican los estilos de los elementos en css. Primero veremos los css para maquetación</p>
+				</section>
+
+				<section>
+					<h2>Display</h2>
+					<p>La propiedad display especifica el tipo de caja que usará un elemento html</p>
+<pre><code>
+	.caja{
+		display:block;
+	}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Width y Height</h2>
+					<p>Especifican el alto y ancho de una caja, las medidas pueden ser expresadas en px, em o % </p>
+<pre><code>
+	.caja{
+		display:block;
+		width: 800px;
+		height: 600px;
+	}
+</code></pre>
+				</section>
+				<section>
+					<h2>Modelo de Caja</h2>
+					<img src="images/modelocaja.gif" alt="">
+				</section>
+
+				<section>
+					<h2>Ejercicio: Centrando una caja</h2>
+					<p>Tomemos como ejempo la caja siguiente</p>
+<pre><code>
+	<div class="caja">
+			<h1>Soy una Caja</h1>
+			<p>Lorem ipsum dolor sit amet (...)</p>
+	</div>
+
+	.caja{
+		width: 50%;
+		margin: 10px auto;
+	}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Se deberia ver</h2>
+					<img src="images/caja.png" alt="">
+				</section>
+
+				<section>
+					<h2>Ahora 2 cajas, de 50% cada una, una al lado de la otra</h2>
+<pre><code>
+	&lt;div class=&quot;izquierda&quot;&gt;
+			&lt;h1&gt;Estoy a la izquierda&lt;/h1&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;derecha&quot;&gt;
+			&lt;h1&gt;Estoy a la derecha&lt;/h1&gt;
+	&lt;/div&gt;
+
+	.izquierda, .derecha{
+		display:block;
+		width:48%;
+		height: 200px;
+		text-align: center;
+		border: 1px solid #333;
+		float:left;
+		margin-right:1%;
+	}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Se deberia ver</h2>
+					<img src="images/cajados.png" alt="">
+				</section>
+
+				<section>
+					<h2>Usando inline-block</h2>
+					<p>La forma fácil: Basicamente es una manera de mantener los elementos alineados "en linea", pero manteniendo sus propiedades de caja, como ancho, alto, margen y padding. Un ejemplo de esto se veria asi</p>
+<pre><code>
+	
+	&lt;span class=&quot;cajauno&quot;&gt;&lt;/span&gt;
+	&lt;span class=&quot;cajados&quot;&gt;&lt;/span&gt;
+
+	.cajauno, .cajados{
+		display:inline-block;
+		width: 200px;
+		height:100px;
+		background-color: red;
+	}
+</code></pre>
+				</section>
+<section>
+					<h2>La propiedad clear</h2>
+					<p>
+						La propiedad clear especifica en que lado de un elemento flotante, no esta permitido flotar, tomando el ejercicio anterior, deberiamos entonces.
+					</p>
+<pre><code>
+	footer{
+		width: 100%;
+		heigh: 100px;
+		display:block;
+		float: left;
+		clear: both;
+	}
+</code></pre>
+				</section>
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Recrea el siguiente layout usando las propiedades aprendidas</p>
+					<img src="images/ejercicio-layout.jpg" alt="" width="600">
+				</section>
+				
+				<section>
+					<h1>Otras propiedades de Posicionamiento</h1>
+				</section>
+
+				<section>
+					<h3>Position</h3>
+					<p>Esta propiedad nos permite posicionar un elemento dentro de la página. Por lo general va acompañado de las propiedades: top, right, bottom y left.</p>
+					
+				</section>
+
+				<section>
+					<h3>Valores de position</h3>
+					<ul>
+						<li>static (estatico) siempre tiene la ubicación que la página da por defecto.</li>
+						<li>relative (relativa) mueve el elemento ralativamente de su posición normal.</li>
+						<li>absolute (absoluta) posiciona al elemento con coordinadas relativas al bloque que lo contiene.</li>
+						<li>fixed(fija) posiciona al elemento con coordinadas relativas a la ventana del navegador.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Resumen posicion</h2>
+					<img src="images/resumenposicion.png" alt="">
+				</section>
+				
+
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Recrea el siguiente layout usando inline-block.</p>
+					<img src="images/layoutclasico.gif" alt="">
+				</section>
+	
+				<section>
+						<h2>Relleno o Padding</h2>
+						<p>Las propiedades padding-top, padding-right, padding-bottom, padding-left se utilizan para definir los anchos de los rellenos de cada uno de los bordes por separado.Puedes definir los 4 lados o solo aquellos que necesites.</p>
+				</section>
+				
+				<section>
+					<h3>Recordando el modelo de caja</h3>
+					<img src="images/modelocaja.gif" alt="">
+				</section>
+
+				<section>
+					<pre><code>
+.selector {
+	padding-top: valor
+	padding-right: valor
+	padding-bottom: valor
+	padding-left: valor
 }
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
+					<h2>Bordes</h2>
+					<p>La propiedad border especifica el espesor, color y estilo de los bordes. Es la forma abreviada para definir los bordes y puede comprender en ella todas las propiedades de los bordes juntas.</p>
+				</section>
+
+				<section>
+					<h2>Posibles Valores</h2>
+					<p>thin | medium | thick | tamaño (px, pc, pt, mm, cm, in) | nombre del color(inglés) | #xxxxxx | transparent | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</p>
+					<pre><code>
+ .selector {border: valor-1 valor-2 valor-n} 
+					</code></pre>		
+				</section>
+
+				<section>
+						<h2>Border Width</h2>
+<pre><code>
+.selector {
+	border-top-width: valor;
+	border-right-width: valor;
+	border-bottom-width: valor;
+	border-left-width: valor;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Color de los Bordes</h2>
+<pre><code>
+selector {
+	border-top-color: valor;
+	border-right-color: valor;
+	border-bottom-color: valor;
+	border-left-color: valor;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Estilo Borde</h2>
+					<img src="images/bordeestilo.png" alt="">
+				</section>
+
+
+				<section>
+					<h2>Grosor Borde</h2>
+					<img src="images/bordegrosor.png" alt="">
+				</section>
+
+
+				<section>
+					<h2>Ancho Borde</h2>
+					<img src="images/borderwidth.png" alt="">
+				</section>
+
+				<section>
+					<h2>Margen</h2>
+					<p>La propiedad margin se utiliza para definir el ancho del espacio que se encuentra entre el borde de un elemento y el elemento cercano a el.
+					Esta propiedad define el ancho del margen para los cuatro lados de la caja.</p>
+				</section>
+
+				<section>
+					<h3>Recordando el modelo de caja</h3>
+					<img src="images/modelocaja.gif" alt="">
+				</section>
+				
+				<section>
+					<h3>Posibles valores</h3>
+					<p>longitud | % | auto</p>
+<pre><code>
+p{
+	margin-top:5%
+	margin-right:30px
+	margin-bottom:20px
+	margin-left:50%
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Dimensiones</h2>
+					<img src="images/dimensiones.png" alt="" width="680">
+				</section>
+
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Trata de recrear el siguiente mockup con las herramientas que conoces. Recuerda utilizar la semantica correcta</p>
+					<img src="images/ejerciciomaq.png" alt="">
+				</section>
+
+				<section>
+					<h2>"Efectos" Visuales en CSS</h2>
+					<p>Los efectos visuales se utilizan entre otras cosas para definir la visibilidad de los elementos y también para establecer el comportamiento del contenedor de los mismos.</p>
+				</section>
+
+				<section>
+					<h2>Overflow</h2>
+					<p>Overflow nos permite controlar el comportamiento de una caja en caso que su contenido la desborde.</p>
+<pre><code>
+p{
+	background-color: #FFFFD9;
+	width: 100px;
+	height: 100 px;
+	overflow: scroll
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Clip</h2>
+					<p>Usamos clip cuando queremos recortar una imagen a una medida determinada. Los valores de rect son en este orden (superior derecha inferior izquierda)</p>
+<pre><code>
+img.recortada {
+	position:absolute;
+	clip: rect(0px 50px 100px 0px)
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Visibility</h2>
+					<p>Visibility nos define si un elemento será visible o invisible.</p>
+<pre><code>
+
+h3.se_ve{visibility:visible}
+h3.no_se_ve{visibility:hidden}
+
+</code></pre>
+				</section>
+
+				<section>
+						<h3>Resumen</h3>
+						<img src="images/resumenvisual.png" alt="" width="600">
+				</section>
+
+				<section>
+					<h2>Pseudo Clases</h2>
+					<p>Las pseudo-clases clasifican elementos con características distintas del nombre, atributo o contenido.<br>
+Las pseudo-clases pueden ser dinámicas, en el sentido que un elemento puede adquirir o perder una pseudo clase cuando el usuario interactúa en la página web.</p>
+				</section>
+
+				<section>
+					<h2>Algunas pseudo clases</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>:hover, :active, :focus</li>
+						<li>:link y :visited</li>
+						<li>:first-child, :last-child</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h2>:hover, :active y :focus</h2>
+					<p>A veces necesitamos cambiar la forma de visualizar o interpretar algún objeto en respuesta a una acción del usuario. La pseudo-clase :hover se aplica generalmente cuando el cursor se desplaza por encima de un enlace.
+La pseudo-clase :active se aplica cuando el elemento está siendo activado por el usuario, como por ejemplo cuando el usuario presiona un boton.
+La pseudo-clase :focus se aplica cuando el elemento tiene el foco</p>
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+<pre><code>
+selector:hover {propiedadvalor}
+selector:active {propiedadvalor}
+selector:focus {propiedadvalor}
+</code></pre>
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+					<h2>Ejemplo</h2>
+					<p>Teniendo un enlace &lt;a&gt; </p>
+<pre><code>
+	<a href="#">Soy un Link</a>
+</code></pre>
+					<p>Y el estilo</p>
+<pre><code>
+	a{
+		color:green;
+	}
+	a:hover{
+		color: red;
+	}
+	a:active{
+		color:pink;
+	}
+	a:focus{
+		color:blue;
+	}
+</code></pre>
 				</section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+					<h2>Resumen</h2>
+					<img src="images/pseudoclasesresumen.png" alt="">
 				</section>
 
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<h2>Ejercicio Padawan</h2>
+					<p>Crea un boton, como el de la imagen, centrado en el navegador, de fondo azul, que al posarse el mouse encima cambie de color a rojo. Y una vez visitado quede de color verde.</p>
+					<a href="http://codepen.io/anon/pen/WvLweN?editors=100">Solucion en CodePen</a>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<h2>Ejercicio Jedi</h2>
+					<p>Crea tu C.V. Sigue el diseño propuesto</p>
+						<img src="images/ejerciciomaq2.jpg" alt="" width="660">
 				</section>
 
 			</div>
@@ -406,6 +1031,13 @@ Reveal.addEventListener( 'customevent', function() {
 			});
 
 		</script>
+		<script>
+var c = document.getElementById("micanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
 
 	</body>
 </html>
