@@ -1000,6 +1000,248 @@ selector:focus {propiedadvalor}
 						<img src="images/ejerciciomaq2.jpg" alt="" width="660">
 				</section>
 
+				<section>
+					<h2>Herencia</h2>
+					<p>
+						Una de las características principales de CSS es la herencia de los estilos definidos para los elementos. Cuando se establece el valor de una propiedad CSS en un elemento, sus elementos descendientes heredan de forma automática el valor de esa propiedad.
+					</p>
+					<pre><code>
+	  body { color: blue; }
+	  <!-- HTML -->
+	  &lt;body&gt;
+	  		&lt;h1&gt;Hola&lt;/h1&gt;
+	  		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quibusdam sequi veniam ex, praesentium dolore ducimus nemo error, maiores vel, ullam dolor rerum commodi nisi quaerat libero, totam vero facere.&lt;/p&gt;
+	  &lt;/body&gt;
+</code></pre>
+				</section>
+				<section>
+					<p>Aunque la herencia de estilos se aplica automáticamente, se puede anular su efecto estableciendo de forma explícita otro valor para la propiedad que se hereda, como se muestra en el siguiente ejemplo:</p>
+<pre><code>
+body { font-family: Arial; color: black; }
+  	h1 { font-family: Verdana; }
+  	p { color: red; }
+</code></pre>
+				</section>
+				<section>
+					<h2>Redeclaración de Estilos</h2>
+					<p>En las hojas de estilos complejas, es habitual que varias reglas CSS se apliquen a un mismo elemento HTML. El problema de estas reglas múltiples es que se pueden dar colisiones como la del siguiente ejemplo:</p>
+<pre><code>
+p { color: red; }
+p { color: blue; }
+</code></pre>
+				</section>
+
+				<section>
+					<p>El método seguido por CSS para resolver la redeclaración de estilos es:</p>
+<ul>
+	<li>Determinar todas las declaraciones que se aplican al elemento para el medio CSS seleccionado.</li>
+	<li>Ordenar las declaraciones según su origen (CSS de navegador, de usuario o de diseñador) y su prioridad (palabra clave !important).</li>
+	<li>Ordenar las declaraciones según lo específico que sea el selector. Cuanto más genérico es un selector, menos importancia tienen sus declaraciones.</li>
+	<li>Si después de aplicar las normas anteriores existen dos o más reglas con la misma prioridad, se aplica la que se indicó en último lugar.</li>
+</ul>
+
+				</section>
+
+				<section>
+					<h2>Respecto a !important</h2>
+					<img src="images/important.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Fondos</h2>
+					<p>El fondo puede ser un color simple o una imagen. El fondo solamente se visualiza en el área ocupada por el contenido y su relleno, ya que el color de los bordes se controla directamente desde los bordes y las zonas de los márgenes siempre son transparentes.</p>
+				</section>
+				<section>
+					<table class="property" summary="Definición de la propiedad background-image de CSS">
+    <thead>
+        <tr>
+            <th scope="row">Propiedad</th>
+            <td><strong class="title"><strong>background-image</strong></strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Valores</th>
+            <td>url | none | <a href="/referencia/css/el_valor_inherit.html">inherit</a></td>
+        </tr>
+        <tr>
+            <th scope="row">Se aplica a</th>
+            <td>Todos los elementos</td>
+        </tr>
+        <tr>
+            <th scope="row">Valor inicial</th>
+            <td>none</td>
+        </tr>
+        <tr>
+            <th scope="row">Descripción</th>
+            <td>Establece una imagen como fondo para los elementos</td>
+        </tr>
+    </tbody>
+</table>
+				</section>
+
+				<section>
+					<h2>Ejemplo</h2>
+<pre><code>
+&lt;div class=&quot;caja&quot;&gt;&lt;/div&gt;
+
+.caja{
+	display:block;
+	width:100px;
+	height:100px;
+	background-image: url("imagen.jpg");
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Background Repeat</h2>
+					<p></p>
+
+				</section>
+				<section>
+					<table class="property" summary="Definición de la propiedad background-repeat de CSS">
+    <thead>
+        <tr>
+            <th scope="row">Propiedad</th>
+            <td><strong class="title"><strong>background-repeat</strong></strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Valores</th>
+            <td>repeat | repeat-x | repeat-y | no-repeat | <a href="/referencia/css/el_valor_inherit.html">inherit</a></td>
+        </tr>
+        <tr>
+            <th scope="row">Se aplica a</th>
+            <td>Todos los elementos</td>
+        </tr>
+        <tr>
+            <th scope="row">Valor inicial</th>
+            <td>repeat</td>
+        </tr>
+        <tr>
+            <th scope="row">Descripción</th>
+            <td>Controla la forma en la que se repiten las imágenes de fondo</td>
+        </tr>
+    </tbody>
+</table>
+				</section>
+				<section>
+					<h2>Background Repeat</h2>
+					<p>El valor repeat indica que la imagen se debe repetir en todas direcciones y por tanto, es el comportamiento por defecto. El valor no-repeat muestra una sola vez la imagen y no se repite en ninguna dirección. El valor repeat-x repite la imagen sólo horizontalmente y el valor repeat-y repite la imagen solamente de forma vertical.</p>
+				</section>
+
+				<section>
+					<h2>Background position</h2>
+					<p>La propiedad background-position permite indicar la distancia que se desplaza la imagen de fondo respecto de su posición original situada en la esquina superior izquierda.
+
+Si se indican dos porcentajes o dos medidas, el primero indica el desplazamiento horizontal y el segundo el desplazamiento vertical respecto del origen (situado en la esquina superior izquierda). Si solamente se indica un porcentaje o una medida, se considera que es el desplazamiento horizontal y al desplazamiento vertical se le asigna automáticamente el valor de 50%.</p>
+				</section>
+
+				<section>
+					<table class="property" summary="Definición de la propiedad background-position de CSS">
+    <thead>
+        <tr>
+            <th scope="row">Propiedad</th>
+            <td><strong class="title"><strong>background-position</strong></strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Valores</th>
+            <td>( ( <a href="/referencia/css/porcentajes.html">porcentaje</a> | <a href="/referencia/css/unidades_de_medida.html">unidad de medida</a> | left | center | right ) ( <a href="/referencia/css/porcentajes.html">porcentaje</a> | <a href="/referencia/css/unidades_de_medida.html">unidad de medida</a> | top | center | bottom )? ) | ( ( left | center | right ) || ( top | center | bottom ) ) | <a href="/referencia/css/el_valor_inherit.html">inherit</a></td>
+        </tr>
+        <tr>
+            <th scope="row">Se aplica a</th>
+            <td>Todos los elementos</td>
+        </tr>
+        <tr>
+            <th scope="row">Valor inicial</th>
+            <td>0% 0%</td>
+        </tr>
+        <tr>
+            <th scope="row">Descripción</th>
+            <td>Controla la posición en la que se muestra la imagen en el fondo del elemento</td>
+        </tr>
+    </tbody>
+</table>
+				</section>
+				<section>
+					<h2>Ejemplo</h2>
+<pre><code>
+#caja1 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#caja2 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#caja3 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Listas</h2>
+					<p>Por defecto, los navegadores muestran los elementos de las listas no ordenadas con una viñeta formada por un pequeño círculo de color negro. Los elementos de las listas ordenadas se muestran por defecto con la numeración decimal utilizada en la mayoría de países.</p>
+				</section>
+				<section>
+					<table class="property" summary="Definición de la propiedad list-style-type de CSS">
+    <thead>
+        <tr>
+            <th scope="row">Propiedad</th>
+            <td><strong class="title"><strong>list-style-type</strong></strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Valores</th>
+            <td>disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none | <a href="/referencia/css/el_valor_inherit.html">inherit</a></td>
+        </tr>
+        <tr>
+            <th scope="row">Se aplica a</th>
+            <td>Elementos de una lista</td>
+        </tr>
+        <tr>
+            <th scope="row">Valor inicial</th>
+            <td>disc</td>
+        </tr>
+        <tr>
+            <th scope="row">Descripción</th>
+            <td>Permite establecer el tipo de viñeta mostrada para una lista</td>
+        </tr>
+    </tbody>
+</table>
+				</section>
+				<section>
+					<h3>Ejercicio</h3>
+					<img src="images/listas.gif" alt="">
+				</section>
+
+				<section>
+					<h2>Listas con imágenes</h2>
+					<p>Cuando se requiere personalizar el aspecto de las viñetas, se debe emplear la propiedad list-style-image, que permite mostrar una imagen propia en vez de una viñeta automática.</p>
+					<img src="images/listasimagenes.gif" alt="">
+				</section>
+				
+				<section>
+					<h3>Ejemplos</h3>
+<pre><code>
+ul.ok { list-style-image: url("imagenes/ok.png"); }
+ul.flecha { list-style-image: url("imagenes/flecha.png"); }
+ul.circulo { list-style-image: url("imagenes/circulo_rojo.png"); }
+</code></pre>
+				</section>
+
+				<section>
+					
+				</section>
 			</div>
 
 		</div>
