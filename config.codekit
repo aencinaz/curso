@@ -581,6 +581,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/important.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103527,
+		"inputAbbreviatedPath": "\/images\/important.jpg",
+		"outputAbbreviatedPath": "\/images\/important.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/modernizr.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1007,6 +1017,14 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/README.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
