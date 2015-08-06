@@ -1238,9 +1238,379 @@ ul.flecha { list-style-image: url("imagenes/flecha.png"); }
 ul.circulo { list-style-image: url("imagenes/circulo_rojo.png"); }
 </code></pre>
 				</section>
+				
+				<section>
+					<h2>Propiedades CSS3 visuales indispensables</h2>
+				</section>
+						
+				<section>
+					<h2>Border - Radius</h2>
+					<p>Define el radio del borde de un elemento caja</p>
+<pre><code>
+.caja{
+	width: 100px;
+	height:100px;
+	border-radius: 20px;
+}
+</code></pre>	
+				</section>
 
 				<section>
-					
+					<h2>Ejercicio</h2>
+					<p>Recrea el siguiente Efecto</p>
+					<a href="http://codepen.io/anon/pen/eNxGLW?editors=001">http://codepen.io/anon/pen/eNxGLW?editors=001</a>
+				</section>
+
+				<section>
+					<h1>Transformaciones y Animaciones CSS3</h1>
+				</section>
+
+				<section>
+					<h2>Transformaciones</h2>
+					<p>Las transformaciones de CSS3 pueden ser en 2D y en 3D, siendo estas últimas considerablemente más complejas al tener que tener en cuenta los tres ejes de coordenadas.</p>
+				</section>
+				<section>
+					<h2>Las Transformaciones mas usadas son:</h2>
+						<ul>
+						    <li>Rotate. Rotate te permite rotar un elemento dándole un ángulo de giro en grados.</li>
+						    <li>Scale. Scale te permite escalar un elemento, toma valores positivos y negativos y se le pueden poner decimales.</li>
+						    <li>Translate. Translate nos permite trasladar un elemento a la vez en el eje de las X y de las Y, dándole las coordenadas iniciales y finales.</li>
+						</ul>
+				</section>
+				<section>
+					<h2>Transform</h2>
+					<p>El Valor por defecto de la propiedad transform es "none"</p>
+<pre><code>
+.ejemplo {
+   transform:none;
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Ejemplo</h2>
+<pre><code>
+.ejemplo {
+	 -webkit-transform: rotate (45deg);
+	 -moz-transform: rotate (45deg);
+	 -o-transform: rotate (45deg);
+	 -ms-transform: rotate (45deg);
+	 transform: rotate (45deg);
+}
+</code></pre>
+<img src="http://media0.giphy.com/media/d8hmw74CXBdXW/giphy.gif" alt="">
+				</section>
+				<section>
+					<p>La propiedad css es </p>
+<pre><code>
+.ejemplo {
+	 transform: rotate (45deg);
+}
+</code></pre>
+					<p>Lo demás son prefijos según el navegador</p>
+<pre><code>
+.ejemplo {
+     -webkit-transform: rotate (45deg); /* Chrome y Navegadores basados en webkit*/
+	 -moz-transform: rotate (45deg); /* Firefox*/
+	 -o-transform: rotate (45deg); /* Opera*/
+	 -ms-transform: rotate (45deg); /* Internet Exploited */
+}
+</code></pre>
+				</section>
+				<section>
+					<h3>Express Prefixer al rescate!</h3>
+					<p>Obtener los prefijos crossbrowser automagicamente</p>
+					<a href="http://expressprefixr.herokuapp.com/">http://expressprefixr.herokuapp.com/</a>
+					<img src="http://media.giphy.com/media/2iGHgCxfyahva/giphy.gif" alt="" width="">
+				</section>
+				<section>
+					<p>Por defecto, el punto de referencia que toma como eje para hacer la rotación es el centro, pero también se puede especificar otro punto. Aquí un ejemplo en que se traslada el eje de rotación a la parte superior izquierda del elemento:</p>
+<pre><code>
+
+.ejemplo{
+	transform-origin: left top;
+	transform: rotate (-20deg);
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Scale</h2>
+					<p>Escala un elemento en sus valores x e y (ancho y alto)</p>
+<pre><code>
+.ejemplo{
+	transform: scale(2);
+}
+</code></pre>
+				</section>
+				<section>
+					<p>También es posible que queramos dar dos valores diferentes según las X y las Y, con lo que creamos un efecto de escala no proporcional que nos da un efecto visual de distorsión.</p>
+<pre><code>
+	transform: scale (.5, 2);
+</code></pre>
+				</section>
+
+				<section>
+					<p>Si lo deseamos, podemos aplicar el cambio de escala sólo en una dirección. Utilizamos scaleX para sólo escalar en el eje de las X y ScaleY para sólo escalar en el eje de las Y:</p>
+<pre><code>
+		transform: scaleY(3);
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Translate</h2>
+					<p>Este nombre puede llevar a confusión, ya que esta propiedad de CSS3 no hace propiamente una transición, sino que hace que un elemento pase de estar en una posición a estar en otra. Con las transiciones y las animaciones de CSS3 vamos a poder darle un efecto visual de movimiento.</p>
+<pre><code>
+.ejemplo{
+		transform: translate(10px, 20px);
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Ejercicio</h2>
+					<p>
+						Aplica las 3 transformaciones a un elemento &lt;a&gt; al momento de posar el mouse sobre el 
+					</p>
+				</section>
+
+				<section>
+					<h1>Transiciones</h1>
+					<p>Para activar una transición es necesario que se detecte un evento. Por ejemplo con :hover, :active o:focus. Si combinamos las transiciones con las transformaciones de CSS3, daremos un efecto de movimiento.</p>
+				</section>
+				<section>
+					<h2>Ejemplo</h2>
+<pre><code>
+#nav a{
+	 background-color:red;
+}
+
+#nav a:hover,
+#nav a:focus{
+	background-color:blue;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+</code></pre>
+
+				</section>
+				<section>
+					<p>En este ejemplo estamos indicando que la propiedad de transición a variar es el color del background y que se tome 2 segundos en hacer progresivamente el cambio de color. Las transiciones de CSS3 pueden tomar estos valores:</p>
+					<ul>
+  					  <li>transition-property</li>
+  					  <li>transition-duration</li>
+  					  <li>transition-delay</li>
+  					  <li>transition-timing-function</li>
+					</ul>
+				</section>
+
+				<section>
+					<table>
+						<tbody>
+						  <tr>
+						    <th style="width:20%">Value</th>
+						    <th>Descripcion</th>
+						  </tr>  
+						  <tr>
+						    <td>none</td>
+						    <td>Ninguna propiedad tendrá un efecto de transicion</td>
+						  </tr>
+						  <tr>
+						    <td>all</td>
+						    <td>Valor por defecto. Todas las propiedades tendran una transicion</td>
+						  </tr>
+						  <tr>
+						    <td><i>property</i></td>
+						    <td>Define una propiedad separada por comas Ej: width, height, background etc.</td>
+						  </tr>
+							<tr>
+						    <td>inherit</td>
+						    <td>Hereda la propiedad de su elemento padre</td>
+						    </tr>
+						  </tbody>
+					</table>
+				</section>
+				<section>
+					<h2>Duration</h2>
+					<p>Con transition-duration especificamos el tiempo que va a tardar la transición. Este tiempo se puede expresar tanto en segundos como en milisegundos. Así, 2.4s y 2400ms tendrán una misma duración.</p>
+<pre><code>
+#desplazamiento a {
+position: absolute;
+left: 0;
+
+transition-property: left;
+transition-duration: 2s;
+}
+
+#desplazamiento a:hover {
+left:15px;
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Retraso en la Animación</h2>
+<p>
+	Con la propiedad transition-delay podemos indicar un tiempo de espera antes de empezar a realizar la transición. Esta propiedad puede tomar tanto valores positivos como negativos. En el caso que le demos un valor negativo, lo que sucede es que la transición tiene lugar en el momento de accionar el evento, lo que empieza en el punto que habría empezado en caso de haberlo hecho en el tiempo indicado. Así, si indico un retraso de -3s y tengo una animación de 10s, en el momento de empezar no lo hará en el segundo 0, sino en el segundo 3.
+</p>
+				</section>
+				<section>
+					<h2>Velocidad</h2>
+					<p>La propiedad transition-timing-function especifica la velocidad en que se desarrollará la transición, utilizando las llamadas curvas de Bezier. Así, podemos programar la transición para que empiece a una velocidad, luego frene y después se acelere o darle el movimiento que creamos conveniente.</p>
+					<img src="images/bezier.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Resumiendo</h2>
+<pre><code>
+.elemento {
+	 height: 100px;
+	 transition: all 2s linear;
+}
+
+.elemento:hover {
+	 height: 200px;
+}
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Animaciones CSS3 Facil y bonito</h2>
+					<a href="http://www.css3maker.com/css3-animation.html#">http://www.css3maker.com/css3-animation.html#</a>
+				</section>
+
+				<section>
+					<h2>@Fontface y Webfonts</h2>
+					<p>Otra propiedad de css3 es @font-face que permite utilizar tipografias distintas a las de sitema</p>
+					<p>Las tipografias de sistema, varian segun el sistema operativo</p>
+				</section>
+
+				<section>
+					<h2>Servicios de Webfonts</h2>
+						<p>Algunos de los servicios mas populares para la inclusión de webfonts son</p>
+					<ul>
+						<li>Google Web Fonts</li>
+						<li>Typekit</li>
+						<li>FontAwesome</li>
+						<li>IcoMoon</li>
+						<li>Squirrel Fonts Generator</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Google Web Fonts</h2>
+					<img src="images/googlewebfonts.png" alt="">
+				</section>
+				<section>
+					<h2>FontAwesome</h2>
+					<img src="images/fontawesome.png" alt="">
+				</section>
+
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Recrea la siguiente animacion utilizando FontAwesome </p>
+					<p>el cdn de FontAwesome es <a href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css</a> </p>
+					<a href="http://codepen.io/anon/pen/XbOeGz">http://codepen.io/anon/pen/XbOeGz</a>
+				</section>
+				<section>
+					<h2>Preprocesadores</h2>
+					<p>Un preprocesador de CSS es una herramienta que nos permite escribir pseudo-código CSS que luego será convertido a CSS real. Ese pseudo-código se conforma de variables, condiciones, bucles o funciones. Podríamos decir que tenemos un lenguaje de programación que genera CSS.</p>
+					<img src="images/preprocesador.jpg" alt="">
+				</section>
+
+				<section>
+					<img src="images/sass.png" alt="">
+				</section>
+
+				<section>
+					<h2>Variables</h2>
+					<p>Las vairbles son la forma de reusar contenido en tu codigo, recuerda DRY(A)</p>
+<pre><code>
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Anidación</h2>
+					<p>En SCSS es muy sencillo definir la jerarquia y especificidad de los selectores, ya que esta se realiza visualmente</p>
+<pre><code>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+</code></pre>
+				</section>
+
+				<section>
+					<p>El codigo anterior se procesa y en css se transforma en </p>
+<pre><code>
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Modularidad</h2>
+					<p>Divide y vencerás! . Supongamos que tienes los estilos del layout, de botones y de tipografia separados en 3 archivos css... triste no? 3 peticiones HTTP es mucho</p>
+<pre><code>
+@import "layout";
+@import "botones";
+@import "tipo";
+</code></pre>
+				</section>
+				<section>
+					<h2>MIXINS</h2>
+					<p>Los mixins son a SASS lo que las funciones son a los lenguajes de programación</p>
+					<img src="https://media4.giphy.com/media/PlwtdKszlxyLK/200.gif" alt="">
+				</section>
+
+				<section>
+					<h2>Un mixin para border-radius</h2>
+<pre><code>
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+</code></pre>
+				</section>
+				<section>
+					<h2>Compass, un set de mixins</h2>
+					<a href="http://compass-style.org/">http://compass-style.org/</a>
+					<p></p>
+					<img src="https://media3.giphy.com/media/2xgzOPvrWW7hm/200.gif" alt="">
 				</section>
 			</div>
 

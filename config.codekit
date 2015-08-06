@@ -411,6 +411,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bezier.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5148,
+		"inputAbbreviatedPath": "\/images\/bezier.jpg",
+		"outputAbbreviatedPath": "\/images\/bezier.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bordeestilo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -551,6 +561,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/fontawesome.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 631628,
+		"inputAbbreviatedPath": "\/images\/fontawesome.png",
+		"outputAbbreviatedPath": "\/images\/fontawesome.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/github-deben.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -558,6 +578,16 @@
 		"initialSize": 9650,
 		"inputAbbreviatedPath": "\/images\/github-deben.png",
 		"outputAbbreviatedPath": "\/images\/github-deben.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/googlewebfonts.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 251498,
+		"inputAbbreviatedPath": "\/images\/googlewebfonts.png",
+		"outputAbbreviatedPath": "\/images\/googlewebfonts.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -621,6 +651,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/preprocesador.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7252,
+		"inputAbbreviatedPath": "\/images\/preprocesador.jpg",
+		"outputAbbreviatedPath": "\/images\/preprocesador.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/preprocesadorescss.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -668,6 +708,16 @@
 		"initialSize": 226855,
 		"inputAbbreviatedPath": "\/images\/resumenvisual.png",
 		"outputAbbreviatedPath": "\/images\/resumenvisual.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/sass.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33599,
+		"inputAbbreviatedPath": "\/images\/sass.png",
+		"outputAbbreviatedPath": "\/images\/sass.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
