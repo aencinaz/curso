@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+						<h1>SASS</h1>
+				</section>
+				
+				<section>
+					<h2>Syntaxis Básica</h2>	
+				</section>
+
+				<section>
+					<h2>Comentarios </h2>
+					<p>Los comentarios que hagas en un archivo .scss con dos barras inclinadas no aparecerán en el CSS resultante. Esto es muy útil para comentarios que no  quieres que aparezcan en el CSS final.</p>
+<pre><code>
+// Este comentario no saldrá
+/* Este comentario sí saldrá*/
+body {
+  font: {
+    family: Arial, sans-serif;
+    size: 100$;
+    weight: normal;
+  }
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Importando en SASS</h2>
+					<p>El uso de @import es diferente en Sass que en CSS. En una hoja de estilos CSS supone una nueva llamada al servidor para cargar otra hoja de estilos y esperar a que se cargue para aplicar los nuevos estilos (razón por la cual se usa poco), por ejemplo supongamos que tenemos dentro de nuestro css:</p>
+<pre><code>
+/*
+* Importamos los estilos de menu.css
+*/
+@import "menu.css";
+</code></pre>
+				</section>
+				<section>
+					<h2>Ejemplo</h2>
+					<p>Creamos un archivo  _menu.scss en nuestro directorio SASS</p>
+<pre><code>
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu > li {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<p>Y lo importamos en nuestro archivo principal</p>
+<pre><code>
+// Importamos los estilos de menu.scss
+// cuando simpore compile main.scss
+@import "menu";
+</code></pre>
+				<img src="images/importando-sass.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Anidación de Selectores</h2>
+					<p>Suponiendo el siguiente codigo CSS</p>
+<pre><code>
+.contenido {
+  width: 300px;
+  background: #eaeaea;
+}
+.contenido h2 {
+  font-size: 18px;
+}
+.contenido p {
+  font-size: 14px
+</code></pre>
+				</section>
+
+				<section>
+					<h2>En SASS</h2>
+						<p>En sass seria</p>
+<pre><code>
+.contenido {
+  width: 300px;
+  background: #eaeaea;
+ 
+  h2 {
+    font-size: 18px;
+  }
+ 
+  p {
+  font-size: 14px;
+  }
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Selector Padre</h2>
+					<p>Cuando estamos anidando el símbolo &amp; se comporta igual que un comodín, y se refiere siempre al selector “padre”. Por ejemplo:</p>
+<pre><code>
+.contenido {
+    border: 1px solid #999;
+    padding: 10px;
+  
+    a {
+      text-decoration: underline;
+ 
+      &amp;:hover {
+        color: green;
+    }
+}
+</code></pre>
+				</section>
+				<section>
+					<p>La anidación es una herramienta potente, pero sobreexplotarla lleva a escribir CSS con demasiada especificidad, lo que no se recomienda. Trata de mantener 3 niveles como maximo de anidacion</p>
+					<img src="http://media.giphy.com/media/kB2uyoigIXPMI/giphy.gif" alt="">
+				</section>
+
+				<section>
+					<h2>Mixins</h2>
+					<p>Los Mixins te permiten reutilizar estilos (propiedades e incluso selectores) sin tener que copiarlos y pegarlos cada vez que quieres utilizarlos.</p>
+					<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8VZhW4825DSQ5LihSfSfQkgDkWxEDhUShbCrMC5T6cRXrHOdt" alt="">
+				</section>
+
+				<section>
+					<h2>Teniendo el siguiente codigo</h2>
+<pre><code>
+.btn-a {
+   background: blue;
+   color: white;
+   width: 30px;
+   border-radius: 10px;
+}
+.btn-b {
+   background: black;
+   color: white;
+   width: 30px;
+   border-radius: 10px;
+}
+</code></pre>
+					<p>Como vemos, todo se repite salvo el color de fondo. Este es un ejemplo de repetición de código que probablemente queramos evitar en nuestra hoja .scss, y lo podemos hacer gracias a los Mixin</p>
+				</section>
+
+				<section>
+						<h2>Creando nuestro primer mixin</h2>
+						<p>Para escribir un Mixin lo hacemos escribiendo @Mixin seguido por el nombre del mismo. Por ejemplo, para el caso anterior, escribiríamos en el Mixin las propiedades que repetíamos. Y luego en cada botón incluimos el Mixin con @include:</p>	
+<pre><code>
+/* style.scss */
+@Mixin botones {
+   color: white;
+   width: 30px;
+   border-radius: 10px;
+}
+.btn-a {
+   @include botones;
+   background: blue;
+}
+.btn-b {
+   @include botones;
+   background: black;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Tener en cuenta:</h2>
+					<ul>
+						<li>Como regla general está bien escribir primero el @include y luego poner las propiedades singulares (como background: black;) para poder sobreescribir alguna de las que nos trae el Mixin si fuera necesario.</li>
+						<li>Asegúrate que el @Mixin está declarado antes de usar los @include. Por ejemplo, puedes crear un parcial (partial) que se llame _mixins.scss y lo importamos antes del resto de parciales (puedes ver qué es un parcial en Sass: Comentarios, Importaciones y Anidación)</li>
+						<li>@include no es lo mismo que @import. Con @include incluimos un mixin, mientras que con @import incluimos un archivo. En el mismo artículo que el punto anterior verás el uso de @import.</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Mixins con Parametros</h2>
+					<p>El poder real de los Mixins está en que podemos pasar argumentos a los mismos. Los argumentos se declaran como una lista de variables dentro de un paréntesis. A cada una de estas variables se le asigna un valor cada vez que se usa el mixin. De esta manera no generaremos código repetido cada vez que lo usemos, ya que gracias a los argumentos podemos obtener un código singular para cada caso.</p>
+				</section>
+
+				<section>
+					<h2>Ejemplo</h2>
+<pre><code>
+@mixin rounded($radio) {
+  border-radius: $radio;
+  -moz-border-radius: $radio;
+  -webkit-border-radius: $radio;
+}
+ 
+#footer { @include rounded(5px); }
+#sidebar { @include rounded(8px); }
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Aplicando el mixin</h2>
+<pre><code>
+#footer {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+ 
+#sidebar {
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px; }
+</code></pre>
+				</section>
+				
+				<section>
+					<p>A los argumentos del mixin se les puede dar también un valor por defecto, de tal manera que si al usar el Mixin no se pasa ese argumento, se le asignará el valor por defecto.
+
+Si queremos incluir un valor por defecto en el ejemplo anterior, haríamos:</p>	
+<pre><code>
+@mixin rounded($radio: 10px)) {
+  border-radius: $radio;
+  -moz-border-radius: $radio;
+  -webkit-border-radius: $radio;
+}
+ 
+#navbar li { @include rounded; }
+#footer { @include rounded(5px); }
+#sidebar { @include rounded(8px); }
+</code></pre>
+				</section>
+				
+				<section>
+					<p>El uso de Mixins es tan potente que encontraréis librerías, páginas web y artículos de blogs dedicados exclusivamente a compartir Mixins</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</section>
+				<section>
+
+
+					<h2>Variables</h2>
+					<p>Las variables en SASS se escriben con el prefijo $. Esta variable será posible de utilizar a lo largo de nuestro documento scss o en otros documentos con la etiqueta @import </p>
+<pre><code>
+
+	$colortipografia: #333;
+	
+	p{
+		text-align:center;
+		color: $colortipografia;
+	}
+
+</code></pre>
+				</section>
+
+				<section>
+					<p>Podemos crear, por ejemplo, un archivo que podemos llamar _configuracion.scss donde pueden estar nuestras variables e importarlo, almacenando asi las variables en un solo archivo y facilitando la mantención del codigo. </p>
+					<img src="images/variables-css.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Tipos de Valores en Variables SASS</h2>
+					<p>Algunos valores que pueden almacenar las variables</p>
+<pre><code>
+// Booleano
+$sombra: true;
+$borde: false;
+ 
+// Números, con o sin unidades
+$margen: 4px;
+$font-size: 3rem;
+$line-height: 1.5;
+ 
+// Cadenas de texto,con o sin comillas
+$principal: Georgia;
+$fuente: 'Helvetica Neue';
+$mensaje: "Cargando...";
+ 
+// Listas
+$nombres: Juan, Luis, María;
+$margin: 10px 10px 0 20px;
+ 
+// Null, se usan sobre todo en condicionales
+$bordes: null;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Variables ¿Globales?</h2>
+					<p>Si definimos una variable fuera de cualquier declaración de estilos, esta variable y su valor estarán disponibles de forma global. Pero, ¿qué sucede si definimos una variable dentro de una declaración como por ejemplo:</p>
+<pre><code>
+.contenido {
+ 
+    p {
+      $color: #999;
+      color: $color;
+    }
+}
+ 
+.lateral {
+    color: $color;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<p>¿Y qué sucede si tenemos una variable global y luego cambiamos su valor dentro de una declaración?</p>
+<pre><code>
+$color: black;
+.contenido {
+ 
+    p {
+      $color: #999;
+      color: $color;
+    }
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>CV reloaded</h2>
+					<p>Crea una nueva versión de tu CV, usando las siguientes propiedades y herramientas</p>
+					<ul>
+						<li>Sass y Compass </li>
+						<li>Variables</li>
+						<li>Al menos 1 mixin</li>
+						<li>Animaciones y Transiciones</li>
+						<li>WebFonts</li>
+						<li>Herencia</li>
+					</ul>
+					
+					<p>PD: usa box-sizing: border-box en tus cajas</p>
+				</section>
+
+				<section>
+					<h2>Extend</h2>
+					<p>@extend extiende las propiedades de un selector declarado anteriormente al selector en el cual se utiliza, por ejemplo</p>
+<pre><code>
+.estilo{
+	color:red;
+	border-radius:10px;
+}
+.boton{
+	@extend .estilo;
+}
+</code></pre>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+		<script>
+var c = document.getElementById("micanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+	</body>
+</html>

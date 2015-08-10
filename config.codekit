@@ -611,6 +611,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/importando-sass.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12344,
+		"inputAbbreviatedPath": "\/images\/importando-sass.jpg",
+		"outputAbbreviatedPath": "\/images\/importando-sass.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/important.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -811,6 +821,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/variables-css.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13048,
+		"inputAbbreviatedPath": "\/images\/variables-css.jpg",
+		"outputAbbreviatedPath": "\/images\/variables-css.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -882,6 +902,14 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/parte2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/parte2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/plugin\/highlight\/highlight.js": {
 		"fileType": 64,
