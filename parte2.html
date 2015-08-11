@@ -364,10 +364,10 @@ $color: black;
 						<li>WebFonts</li>
 						<li>Herencia</li>
 					</ul>
-					
+					<p>Ejemplo: <a href="http://codepen.io/anon/pen/doaxQv?editors=001">Codepen</a></p>
 					<p>PD: usa box-sizing: border-box en tus cajas</p>
 				</section>
-
+				
 				<section>
 					<h2>Extend</h2>
 					<p>@extend extiende las propiedades de un selector declarado anteriormente al selector en el cual se utiliza, por ejemplo</p>
@@ -381,6 +381,135 @@ $color: black;
 }
 </code></pre>
 				</section>
+				<section>
+					<h2>CSS3 con Compass</h2>
+					<p>Para usar los mixins de propiedades CSS3 y hacerlas crossbrowser, utilizando compass, utilizamos</p>
+<pre><code>
+@import "compass/css3";
+</code></pre>
+				</section>
+
+				<section>
+					<h1>Colores en SASS</h1>
+				</section>
+				<section>
+					<h2>rgba()</h2>
+					<p>En CSS3 las propiedades para crear un color en rgba ( Red, Green, Blue, Alpha) es</p>
+<pre><code>
+.caja{
+	background-color: rgba(215, 40, 40, 0.9);
+}
+</code></pre>
+				</section>
+				<section>
+					<p>Como generalmente en CSS usamos colores con sus valores hexadecimales... o variables, en sass tenemos:</p>
+<pre><code>
+$color: #333;
+
+.caja{
+	background-color: rgba($color, .5);
+	background-color: rgba(#333, .5);
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Variantes de Color</h2>
+					<p>En SASS a los valores hexadecimales (o variables) podemos sumarle o restarle unidades para modificar los colores que representan. Por Ej:</p>
+<pre><code>
+$colorprincipal:red;
+.caja{
+	background-color:$colorprincipal - 30;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Oscurecer y Aclarar</h2>
+					<p>Esta funcion ajusta la luminosidad de los colores, usando un % de variación entre 0 y 100</p>
+<pre><code>
+$colorprincipal:red;
+
+.caja{
+	darken( $colorprincipal, 10% );
+	lighten( $colorprincipal, 10% );
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Saturar y Desaturar</h2>
+					<p>Esta funcion ajusta la saturación de los colores, usando un % de variación entre 0 y 100</p>
+<pre><code>
+$colorprincipal:red;
+.caja{
+	saturate( $colorprincipal, 20% )
+	desaturate( $colorprincipal, 20% )
+}
+</code></pre>
+				</section>
+				<section>
+					<p>Una guía con todas las funciones de color la encuentran en </p>
+					<a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">http://sass-lang.com/documentation/Sass/Script/Functions.html</a>
+				</section>
+				<section>
+					<h2>Función Border-Radius</h2>
+					<p>Para hacer bordes redondeados en Compass, contamos con la funcion border radius</p>
+<pre><code>
+.simple   { @include border-radius(4px, 4px); }
+.compound { @include border-radius(2px 5px, 3px 6px); }
+.crazy    { @include border-radius(1px 3px 5px 7px, 2px 4px 6px 8px)}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Degradados</h2>
+					<p>Generar un degradado en CSS es algo asi</p>
+<pre><code>
+background: rgba(212,228,239,1);
+background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -o-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -ms-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: linear-gradient(to right, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+</code></pre>
+				</section>
+				
+				<section>
+					<h2>Pero existe compass</h2>
+<pre><code>
+#radial-gradient {
+  @include background-image(radial-gradient(45px 45px, cyan 10px, dodgerblue 30px));
+}
+
+#linear-gradient {
+  @include background-image(linear-gradient(to bottom right, white, #dddddd));
+}
+
+#v-gradient {
+  @include background-image(linear-gradient(white, #aaaaaa));
+}
+</code></pre>
+				</section>
+				<section>
+					<h2>Box Shadow</h2>
+					<p>Para generar una sombra a una caja en SASS</p>
+<pre><code>
+#box-shadow-default {
+  @include single-box-shadow;
+}
+ 
+#box-shadow-custom {
+  @include box-shadow(red 2px 2px 10px);
+}
+ 
+#box-shadow-custom-multiple {
+  @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+}
+</code></pre>
+				</section>
+
+				
+
 			</div>
 
 		</div>
