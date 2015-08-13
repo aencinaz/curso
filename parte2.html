@@ -508,8 +508,245 @@ background: linear-gradient(to right, rgba(212,228,239,1) 0%, rgba(134,174,204,1
 </code></pre>
 				</section>
 
+				<section>
+					<h2>Text Shadow</h2>
+<pre><code>
+.has-custom-shadow {
+  @include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+}
+</code></pre>
+				</section>
 				
+				<section>
+					<h2>Ejercicio</h2>
+						<p>Crea una ventana modal como la del ejemplo</p>
+						<a href="http://codepen.io/anon/pen/BNbMEe?editors=001">http://codepen.io/anon/pen/BNbMEe?editors=001</a>
+				</section>
 
+				<section>
+					<h1>Diseño Web Responsive</h1>
+				</section>
+				<section>
+					<h2>Media Queries</h2>
+					<p>Las Media queries consisten de un media type y  una o mas expresiones, implicando características del medio, la cual se resuelve como verdadera o falsa. El resultado de la consulta es verdadera si el tipo de medio especificado en el media query concuerda con el tipo de dispositivo que está siendo mostrado y todas las expresiones en el media query son verdaderas.</p>
+<pre><code>
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none; /* Esto ocultaria un elemnto */
+  }
+}
+</code></pre>
+				</section>
+
+				<section>
+						<p>Cuando una media query es verdadera, la hoja de estilo correspondiente o reglas de estilos son aplicadas, siguiendo las reglas normales de cascada.</p>
+				</section>
+
+				<section>
+					<h2>Usando Media Queries en Sass</h2>
+<pre><code>
+$break-small: 320px;
+$break-large: 1200px;
+
+.profile-pic {
+  float: left;
+  width: 250px;
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    float: none;
+  }
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Ejercicio CV RESPONSIVE!</h2>
+					<p>Modifica tu CV haciendolo responsive y modificandolo para que en dispositivos moviles se vea asi</p>
+					<a href="http://codepen.io/anon/pen/KpEEYX?editors=011">http://codepen.io/anon/pen/KpEEYX?editors=011</a>
+
+				</section>
+
+				<section>
+            		<h1>Foundation</h1>
+          				<small>Olviden todo lo que aprendieron (broma)</small>
+        		</section>
+
+        		<section>
+        			<h2>Que es?</h2>
+        			<p>Foundation</p>
+        			<img src="images/foundation-feat.png" alt="">
+        		</section>
+
+        		<section>
+        			<h2>Instalando Foundation y el Cli</h2>
+        			<p>Debemos seguir los pasos en:</p>
+        			<a href="http://foundation.zurb.com/docs/sass.html">http://foundation.zurb.com/docs/sass.html</a>
+        		</section>
+
+        		<section>
+        			<h2>Estructura de Proyecto Foundation</h2>
+        			<img src="images/foundation-dir.png" alt="">
+        		</section>
+
+        		<section>
+        			<h2>Configurando nuestro proyecto</h2>
+        			<p>Foundation esta escrito modularmente, por lo que en la carpeta scss encontraremos el archivo _settings.scss que controla los aspectos visuales de foundation</p>
+        			<img src="images/settings.png" alt="">
+        		</section>
+
+				<section>
+					<h2>app.scss .. Foundation es esteroides para la web</h2>
+						<p>Foundation viene cargado de elementos prediseñados y optimizados para las tareas mas rutinarias de diseño web</p>
+						<ul>
+							<li>Grillas</li>
+							<li>Sliders</li>
+							<li>Formularios</li>
+							<li>Menús</li>
+							<li>MediaQueries</li>
+							<li>Y Mas....</li>
+						</ul>
+				</section>
+
+				<section>
+						<h1>Grillas</h1>
+				</section>
+
+				<section>
+					<h2>Filas</h2>
+						<p>Lo primero será crear una fila, una fila es el elemento básico de Foundation, dentro de una fila puedes dividir la grilla en 12 segmentos (configurable)</p>
+<pre><code>
+	&lt;div class=&quot;row&quot;&gt;
+		 &lt;!-- Soy una fila --&gt;
+	&lt;/div&gt; 
+</code></pre>
+				</section>
+				<section>
+					<h2>Columnas</h2>
+					<p>Foundation trae predeterminadamente 12 columnas, las que puedes utilizar para combinarlas y crear un layout para tu web. Las columnas tienen 3 variantes de grilla</p>
+					<ul>
+						<li>Grilla Small (Mobile First)</li>
+						<li>Grilla Medium</li>
+						<li>Grilla Large</li>
+					</ul>
+				</section>
+
+				<section>
+						<p>Distribución de Columnas</p>
+						<img src="images/columnas.png" alt="">	
+				</section>
+
+				<section>
+					<p>Supongamos que queremos crear una fila, con 3 columnas, cada una de ellas con 1/3 del tamaño de la fila</p>
+<pre><code>
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;large-4 columns panel&quot;&gt;...&lt;/div&gt;
+		&lt;div class=&quot;large-4 columns panel&quot;&gt;...&lt;/div&gt;
+		&lt;div class=&quot;large-4 columns panel&quot;&gt;...&lt;/div&gt;
+	&lt;/div&gt;
+</code></pre>
+				</section>
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Recrea el layout de BCI.cl usando foundation</p>
+					<img src="images/bci.jpg" alt="" width="600">
+				</section>
+				<section>
+					<p>Foundation es Mobile first, asi que por ejemplo a las mismas columnas podemos especificarles un comportamiento para grillas Small y Medium</p>
+<pre><code>
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;large-4 medium-8 small-6 columns panel&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;large-4 medium-4 small-6 columns panel&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;large-4 medium-12 small-12 columns panel&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Ejercicio</h2>
+					<p>Transforma el ejercicio de BCI.cl a responsive</p>
+				</section>
+
+				<section>
+					<h2>Offset</h2>
+						<p>Mueve la columna X posiciones hacia la derecha</p>
+<pre><code>
+	&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;large-10 columns large-offset-1&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+</code></pre>
+					<img src="images/offset.png" alt="">
+				</section>
+				
+				<section>
+					<h2>Filas Colapsadas</h2>
+					<p>Para eliminar el padding entre columnas</p>
+<pre><code>
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;large-6 columns panel&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;large-6 columns panel&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Columnas Centradas</h2>
+					<p>Para centrar una columna que no ocupa el ancho total, usamos large-centered, small-centered y medium-centered. Si queremos que este centrada solo en un tamaño especifico </p>
+<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;small-6 large-centered columns&quot;&gt;6 centered&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Visibility</h2>
+					<p>Mostrar en determinados tamaños</p>
+<pre><code>
+&lt;p class=&quot;panel&quot;&gt;
+  &lt;strong class=&quot;show-for-small-only&quot;&gt;This text is shown only on a small screen.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-medium-up&quot;&gt;This text is shown on medium screens and up.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-medium-only&quot;&gt;This text is shown only on a medium screen.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-large-up&quot;&gt;This text is shown on large screens and up.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-large-only&quot;&gt;This text is shown only on a large screen.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-xlarge-up&quot;&gt;This text is shown on xlarge screens and up.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-xlarge-only&quot;&gt;This text is shown only on an xlarge screen.&lt;/strong&gt;
+  &lt;strong class=&quot;show-for-xxlarge-up&quot;&gt;This text is shown on xxlarge screens and up.&lt;/strong&gt;
+&lt;/p&gt;
+</code></pre>
+				</section>
+				<section>
+					<h2>Visibility</h2>
+					<p>Ocultar para determinados tamaños</p>
+<pre><code>
+&lt;p class=&quot;panel&quot;&gt;
+  &lt;strong class=&quot;hide-for-small-only&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on a small screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-medium-up&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on a medium, large, xlarge, or xxlarge screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-medium-only&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on a medium screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-large-up&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on a large, xlarge, or xxlarge screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-large-only&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on a large screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-xlarge-up&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on an xlarge screen and up.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-xlarge-only&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on an xlarge screen.&lt;/strong&gt;
+  &lt;strong class=&quot;hide-for-xxlarge-up&quot;&gt;You are &lt;em&gt;not&lt;/em&gt; on an xxlarge screen.&lt;/strong&gt;
+&lt;/p&gt;
+</code></pre>
+				</section>
+				<section>
+					<h2>Blockgrid</h2>
+					<p>El elemento blockgrid divide el contenido en la cantidad de elementos que le señalas, es ideal para galerias de imagenes o catalogos</p>
+<pre><code>
+&lt;ul class=&quot;small-block-grid-3&quot;&gt;
+  &lt;li&gt;&lt;img src=&quot;http://fakeimg.pl/350x200/00CED1/FFF/?text=img+placeholder&quot;&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;http://fakeimg.pl/350x200/00CED1/FFF/?text=img+placeholder&quot;&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;http://fakeimg.pl/350x200/00CED1/FFF/?text=img+placeholder&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+				</section>
+				<section>
+					
+				</section>
 			</div>
 
 		</div>

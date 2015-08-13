@@ -411,6 +411,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bci.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 225480,
+		"inputAbbreviatedPath": "\/images\/bci.jpg",
+		"outputAbbreviatedPath": "\/images\/bci.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bezier.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -501,6 +511,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/columnas.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35771,
+		"inputAbbreviatedPath": "\/images\/columnas.png",
+		"outputAbbreviatedPath": "\/images\/columnas.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/compass-cover1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -568,6 +588,26 @@
 		"initialSize": 631628,
 		"inputAbbreviatedPath": "\/images\/fontawesome.png",
 		"outputAbbreviatedPath": "\/images\/fontawesome.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/foundation-dir.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 668759,
+		"inputAbbreviatedPath": "\/images\/foundation-dir.png",
+		"outputAbbreviatedPath": "\/images\/foundation-dir.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/foundation-feat.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180384,
+		"inputAbbreviatedPath": "\/images\/foundation-feat.png",
+		"outputAbbreviatedPath": "\/images\/foundation-feat.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -658,6 +698,16 @@
 		"initialSize": 160566,
 		"inputAbbreviatedPath": "\/images\/newhtml5elements.jpg",
 		"outputAbbreviatedPath": "\/images\/newhtml5elements.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/offset.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26402,
+		"inputAbbreviatedPath": "\/images\/offset.png",
+		"outputAbbreviatedPath": "\/images\/offset.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -758,6 +808,16 @@
 		"initialSize": 13435,
 		"inputAbbreviatedPath": "\/images\/semanticohtml5.jpg",
 		"outputAbbreviatedPath": "\/images\/semanticohtml5.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/settings.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71322,
+		"inputAbbreviatedPath": "\/images\/settings.png",
+		"outputAbbreviatedPath": "\/images\/settings.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
