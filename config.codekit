@@ -561,6 +561,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/ejerciciofoundation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 118795,
+		"inputAbbreviatedPath": "\/images\/ejerciciofoundation.png",
+		"outputAbbreviatedPath": "\/images\/ejerciciofoundation.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/ejerciciomaq.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -588,6 +598,16 @@
 		"initialSize": 631628,
 		"inputAbbreviatedPath": "\/images\/fontawesome.png",
 		"outputAbbreviatedPath": "\/images\/fontawesome.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/formularioejercicio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35470,
+		"inputAbbreviatedPath": "\/images\/formularioejercicio.png",
+		"outputAbbreviatedPath": "\/images\/formularioejercicio.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -688,6 +708,16 @@
 		"initialSize": 13194,
 		"inputAbbreviatedPath": "\/images\/nav.jpg",
 		"outputAbbreviatedPath": "\/images\/nav.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/navegacion.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27031,
+		"inputAbbreviatedPath": "\/images\/navegacion.png",
+		"outputAbbreviatedPath": "\/images\/navegacion.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -881,6 +911,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/textoresponsive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50771,
+		"inputAbbreviatedPath": "\/images\/textoresponsive.png",
+		"outputAbbreviatedPath": "\/images\/textoresponsive.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/variables-css.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -968,6 +1008,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/parte2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/parte3.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/parte3.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
